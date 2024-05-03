@@ -26,6 +26,12 @@
           margin-top: 0px;
           background: #a0aec0;
       }
+      /* Responsive adjustments */
+@media (min-width: 768px) {
+  .flex-col.md\:p-12 {
+    padding: 3rem;
+  }
+}
   </style>
 </head>
 <body class="overflow-x-hidden antialiased">
@@ -62,13 +68,22 @@
                   <li>
                     <p>Dịch vụ</p>
                     <ul class="p-2 ">
-                      <li>
-                        <a>Submenu 1</a>
-                      </li>
-                      <li>
-                        <a>Submenu 2</a>
-                      </li>
+                        <li>
+                            <a>Sơn sàn Epoxy</a>
+                          </li>
+                          <li>
+                            <a>Cung cấp bê tông thương phẩm</a>
+                          </li>
+                          <li>
+                              <a>Mài, xử lý sàn bê tông</a>
+                            </li>
+                            <li>
+                              <a>Xử lý chống thấm</a>
+                            </li>
                     </ul>
+                  </li>
+                  <li>
+                    <a class="blue" href="./products.html">Dự án</a>
                   </li>
                   <li>
                     <p class="blue">Bảng giá</p>
@@ -79,7 +94,7 @@
                   </li>
                 </ul>
               </div>
-              <Link href='./'><button class="btn btn-ghost text-xl"><img src="/image/logo.png" alt="logo" height="40px" width="60px"></button></Link>
+              <a href='./index.html'><button class="btn btn-ghost text-xl"><img src="/image/logo.png" alt="logo" height="40px" width="60px"></button></a>
             </div>
             <div class="navbar-center hidden relative z-[99] lg:flex">
               <ul class="relative menu menu-horizontal px-1">
@@ -94,14 +109,24 @@
                   </div>
                   <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                     <li>
-                      <a>Item 1</a>
+                      <a>Sơn sàn Epoxy</a>
                     </li>
                     <li>
-                      <a>Item 2</a>
+                      <a>Cung cấp bê tông thương phẩm</a>
                     </li>
+                    <li>
+                        <a>Mài, xử lý sàn bê tông</a>
+                      </li>
+                      <li>
+                        <a>Xử lý chống thấm</a>
+                      </li>
                   </ul>
                 </div>
-               
+                <div class="dropdown ">
+                    <a href='./products.html'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                        Dự án
+                      </div></a>
+                    </div>
                
                 <div class="dropdown ">
                 <Link href='./info'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
@@ -217,37 +242,35 @@
 
 <!-- Center content -->
 
-<div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+<<div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
 
-  <!-- Image Column -->
-  <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-      <img class="h-full w-full object-cover" src="/image/center_content.jpg" alt="Winding mountain road">
+    <!-- Image Column -->
+    <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+        <img class="h-full w-full object-cover" src="/image/center_content.jpg" alt="Winding mountain road">
+    </div>
+    <!-- Close Image Column -->
+  
+    <!-- Text Column -->
+    <div class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
+        <!-- Text Wrapper -->
+        <div class="flex flex-col p-6 md:p-12">
+            <h2 class="text-2xl font-medium uppercase text-yellow-400 lg:text-4xl">Đơn vị thi công Sơn Epoxy hàng đầu miền Bắc</h2>
+            <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+            <!-- Button Container -->
+            <div class="mt-8">
+                <a href="#" class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-yellow-400 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48">Liên hệ</a>
+            </div>
+        </div>
+        <!-- Close Text Wrapper -->
+    </div>
+    <!-- Close Text Column -->
+  
   </div>
-  <!-- Close Image Column -->
-
-  <!-- Text Column -->
-  <div
-      class="max-w-lg bg-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
-      <!-- Text Wrapper -->
-      <div class="flex flex-col p-12 md:px-16">
-          <h2 class="text-2xl font-medium uppercase text-yellow-400 lg:text-4xl">Đơn vị thi công Sơn Epoxy hàng đầu miền Bắc</h2>
-          <p class="mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-          </p>
-          <!-- Button Container -->
-          <div class="mt-8">
-              <a href="#"
-                  class="inline-block w-full text-center text-lg font-medium text-gray-100 bg-yellow-400 border-solid border-2 border-gray-600 py-4 px-10 hover:bg-green-800 hover:shadow-md md:w-48"> Liên hệ
-            </a>
-          </div>
-      </div>
-      <!-- Close Text Wrapper -->
-  </div>
-  <!-- Close Text Column -->
-
-</div>
+  
 <!-- End Center content -->
 <!-- Our service -->
 <div class="container relative z-40 mx-auto mt-8">
@@ -289,7 +312,7 @@
                               class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
                               <img src="https://www.svgrepo.com/show/503138/webpack.svg" >
                           </div>
-                          <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Đổ bê tông
+                          <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Dịch vụ Cung Cấp Bê Tông Thương Phẩm
                           </p>
                       </dt>
                       <dd class="mt-2 ml-16 text-base text-gray-500"> Lorem ipsum, dolor sit amet consectetur
@@ -304,7 +327,7 @@
                               <img src="https://www.svgrepo.com/show/511771/dashboard-671.svg" >
 
                           </div>
-                          <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Rút lõi công trình
+                          <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Mài, Xử Lý Sàn Bê Tông
                           </p>
                       </dt>
                       <dd class="mt-2 ml-16 text-base text-gray-500"> Lorem ipsum, dolor sit amet consectetur
@@ -319,7 +342,7 @@
                               <img src="https://www.svgrepo.com/show/76267/free-commercial-label.svg" >
 
                           </div>
-                          <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Cướp ngân hàng
+                          <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Xử Lý Chống Thấm
                           </p>
                       </dt>
                       <dd class="mt-2 ml-16 text-base text-gray-500"> Lorem ipsum, dolor sit amet consectetur
@@ -352,23 +375,23 @@
 	<div class="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
 			<div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-				<a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-					<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+				<a href="./trung_tam_y_te_Bac_Tu_Liem.html" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+					<img src="/image/trung_tam_y_te_Bac_TU_Liem.jpg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
 					<div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-					<h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Wines</h3>
+					<h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Trung Tâm Y Tế Bắc Từ Liêm</h3>
 				</a>
 			</div>
 			<div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-				<a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-					<img src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+				<a href="./cong_ty_duoc_Ba_Dinh.html" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+					<img src="/image/duoc_ba_dinh.jpg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
 					<div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-					<h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Gin</h3>
+					<h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Công Ty Dược Ba Đình</h3>
 				</a>
 				<div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
 					<a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-						<img src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+						<img src="image/nuoc_mat_song_hong.jpg" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
 						<div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-						<h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Whiskey</h3>
+						<h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Nhà máy nước mặt Sông Hồng</h3>
 					</a>
 					<a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
 						<img src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
@@ -395,24 +418,24 @@
 <div class="bg-gray-100">
   <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
       <div class="p-5 sm:w-2/12 border-r">
-          <div class="text-sm uppercase text-indigo-600 font-bold">Menu</div>
+          <div class="text-sm uppercase text-indigo-600 font-bold">Trang chủ</div>
           <ul>
               <li class="my-2">
-                  <a class="hover:text-indigo-600" href="#">Home</a>
+                  <a class="hover:text-indigo-600" href="#">Giới thiệu</a>
               </li>
               <li class="my-2">
-                  <a class="hover:text-indigo-600" href="#">Services</a>
+                  <a class="hover:text-indigo-600" href="#">Dịch vụ</a>
               </li>
               <li class="my-2">
-                  <a class="hover:text-indigo-600" href="#">Products</a>
+                  <a class="hover:text-indigo-600" href="#">Bảng giá</a>
               </li>
               <li class="my-2">
-                  <a class="hover:text-indigo-600" href="#">Pricing</a>
+                  <a class="hover:text-indigo-600" href="#">Liên hệ</a>
               </li>
           </ul>
       </div>
       <div class="p-5 sm:w-7/12 border-r text-center">
-          <h3 class="font-bold text-xl text-indigo-600 mb-4">Componentity</h3>
+          <h3 class="font-bold text-xl text-indigo-600 mb-4">HVM</h3>
           <p class="text-gray-500 text-sm mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div>

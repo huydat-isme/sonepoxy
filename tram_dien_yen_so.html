@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
+    <style>
+        @media(max-width:1520px) {
+            .left-svg {
+                display: none;
+            }
+        }
+  
+        /* small css for the mobile nav close */
+        #nav-mobile-btn.close span:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background: #a0aec0;
+        }
+  
+        #nav-mobile-btn.close span:nth-child(2) {
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+    <header class="relative z-50 w-full h-16 sticky top-0 " > 
+        <!-- nav-bar -->
+        <div class="navbar  bg-base-100  "  data-theme ="retro" >
+           <div class="navbar-start" >
+             <div class="dropdown">
+               <label tabIndex="0" class="btn btn-ghost lg:hidden">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   class="h-5 w-5"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                 >
+                   <path
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     strokeWidth="2"
+                     d="M4 6h16M4 12h8m-8 6h16"
+                   />
+                 </svg>
+               </label>
+               <ul
+                 tabIndex={2}
+                 class="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52"
+               >
+                 <li>
+                   <p class="">Giới thiệu</p>
+                   
+                 </li>
+                 <li>
+                   <p>Dịch vụ</p>
+                   <ul class="p-2 ">
+                       <li>
+                           <a>Sơn sàn Epoxy</a>
+                         </li>
+                         <li>
+                           <a>Cung cấp bê tông thương phẩm</a>
+                         </li>
+                         <li>
+                             <a>Mài, xử lý sàn bê tông</a>
+                           </li>
+                           <li>
+                             <a>Xử lý chống thấm</a>
+                           </li>
+                   </ul>
+                 </li>
+                 <li>
+                   <a class="blue" href="./products.html">Dự án</a>
+                 </li>
+                 <li>
+                   <p class="blue">Bảng giá</p>
+                 </li>
+                 <li>
+                   <p>Liên hệ</p>
+         
+                 </li>
+               </ul>
+             </div>
+           
+               <a href='./index.html'   ><div class=" w-20" ><img src="./image/logo.png"   ></div></a>
+           
+            
+           </div>
+           <div class="navbar-center hidden relative z-[99] lg:flex">
+             <ul class="relative menu menu-horizontal px-1">
+               <div class="dropdown ">
+                   <Link href='./info'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                       Giới thiệu
+                     </div></Link>
+                   </div>
+               <div class="dropdown dropdown-hover"> 
+                 <div tabIndex="0" role="button" class="btn m-1 bg-inherit border-none round-none ">
+                   Dịch vụ <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                 </div>
+                 <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                   <li>
+                     <a>Sơn sàn Epoxy</a>
+                   </li>
+                   <li>
+                     <a>Cung cấp bê tông thương phẩm</a>
+                   </li>
+                   <li>
+                       <a>Mài, xử lý sàn bê tông</a>
+                     </li>
+                     <li>
+                       <a>Xử lý chống thấm</a>
+                     </li>
+                 </ul>
+               </div>
+               <div class="dropdown ">
+                   <a href='./products.html'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                       Dự án
+                     </div></a>
+                   </div>
+              
+               <div class="dropdown ">
+               <Link href='./info'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                   Bảng giá
+                 </div></Link>
+               </div>
+     
+               <div class="dropdown ">
+               <div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" onClick={scrollToTargetcontact}>
+                  Liên hệ
+                 </div>
+               </div>
+             </ul>
+           </div>
+           <div class="navbar-end">
+             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+             <b class="text-center text-black-700 text-xl  ">   085.991.1444</b>
+             </div>
+         </div>
+           <!-- end nav-bar -->
+     </header>
+     <!-- end header -->
+     <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
+        <div class="bg-cover bg-center text-center overflow-hidden"
+            style="min-height: 300px; background-image: url('./image/dự án/Trạm điện Yên Sở/1.jpg ')"
+            title="Trung tâm y tế Bắc Từ Liêm">
+        </div>
+        <div class="max-w-3xl mx-auto">
+            <div
+                class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                <div class="bg-white relative top-0 -mt-32 p-5 sm:p-10">
+                    <h1 href="#" class="text-gray-900 font-bold text-3xl mb-2">Dự án: Trạm điện Yên Sở</h1>
+                   
+    
+                    <p class="text-base leading-8 my-5">
+                      Diện tích: 500 m2<br>
+                        Địa chỉ: phường Hoàng Liệt, quận Hoàng Mai, thành phố Hà Nội <br>
+                        Phương pháp thi công: Phương pháp thi công: Sơn epoxy nền, sơn phòng sạch, sơn kháng axit  <br>
+                        Thời gian hoàn thành: tháng 6 Năm 2020<br>
+                       
+
+                    </p>
+    
+                    <h3 class="text-2xl font-bold my-5"> Đơn vị thi công: Epoxy HVM</h3>
+    
+                    <p class="text-base leading-8 my-5">
+                        Tổng công ty Điện lực TP Hà Nội (EVNHANOI) vừa nghiệm thu hoàn thành và đưa vào sử dụng Trạm 110kV Hồ Yên Sở nhằm đáp ứng kịp thời tốc độ phát triển của phụ tải, giảm tổn thất trên lưới điện khu vực quận Hoàng Mai và một phần huyện Thanh Trì.
+                        Trạm 110kV Hồ Yên Sở được khởi công xây dựng ngày 30/06/2020, tại phường Hoàng Liệt, quận Hoàng Mai. Quy mô gồm 3 máy biến áp 63MVA, trong đó, giai đoạn này lắp đặt 2 máy (T1; T2).
+                        
+                    </p>
+    
+                    
+    
+                    <div class="max-w-2xl mx-auto">
+
+                        <div id="default-carousel" class="relative rounded-lg overflow-hidden shadow-lg" data-carousel="static">
+                            <!-- Carousel wrapper -->
+                            <div class="relative h-80 md:h-96" data-carousel-inner>
+                                <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="./image/dự án/Trạm điện Yên Sở/1.jpg"
+                                        class="object-cover w-full h-full" alt="Slide 1">
+                                    <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-semibold text-white md:text-2xl dark:text-gray-800">First Slide</span>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="./image/dự án/Trạm điện Yên Sở/2.jpg"
+                                        class="object-cover w-full h-full" alt="Slide 2">
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="./image/dự án/Trạm điện Yên Sở/3.jpg"
+                                        class="object-cover w-full h-full" alt="Slide 3">
+                                </div>
+                                
+                            </div>
+                           
+                           
+                            <!-- Slider controls -->
+                            <button type="button"
+                                class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition"
+                                data-carousel-prev>
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button type="button"
+                                class="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition"
+                                data-carousel-next>
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    
+                        <p class="mt-5 text-center text-gray-700 dark:text-gray-300">
+                            Một số hình ảnh thi công công trình
+                           
+                        </p>
+                        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+                    
+                    </div>
+                    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- Start Footer -->
+    <div class="bg-gray-100">
+        <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+            <div class="p-5 sm:w-2/12 border-r">
+                <div class="text-sm uppercase text-yellow-400 font-bold">Trang chủ</div>
+                <ul>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">Dịch vụ</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">Bảng giá</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 sm:w-7/12 border-r text-center">
+                <h3 class="font-bold text-xl text-yellow-400 mb-4">HVM</h3>
+                <p class="text-gray-500 text-sm mb-10">Nhà thầu sơn Epoxy hàng đầu miền Bắc</p>
+            </div>
+            <div class="p-5 sm:w-3/12">
+                <div class="text-sm uppercase text-yellow-400 font-bold">Contact Us</div>
+                <ul>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">Trần Phú, Hoàng Mai, Hà Nội</a>
+                    </li>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">hungbinbin@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+            <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+               
+      
+                <a href="https://www.facebook.com/hungbinbin" class="w-6 mx-1">
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Facebook icon</title><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg>
+                </a>
+      
+                <a href="https://www.tiktok.com/@epoxyhungtran" class="w-6 mx-1">
+                  <svg fill="#000000" width="24px" height="24px" viewBox="0 0 0.72 0.72" id="tiktok" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="primary" d="M0.63 0.21v0.06a0.03 0.03 0 0 1 -0.03 0.03 0.24 0.24 0 0 1 -0.12 -0.032v0.197a0.195 0.195 0 1 1 -0.284 -0.173 0.03 0.03 0 0 1 0.044 0.027v0.076a0.028 0.028 0 0 1 -0.008 0.019 0.075 0.075 0 0 0 0.06 0.127A0.078 0.078 0 0 0 0.36 0.46V0.09a0.03 0.03 0 0 1 0.03 -0.03h0.063a0.03 0.03 0 0 1 0.03 0.025A0.12 0.12 0 0 0 0.6 0.18a0.03 0.03 0 0 1 0.03 0.03" style="fill: rgb(0, 0, 0);"/></svg>
+                </a>
+               
+               
+            </div>
+            <div class="my-5">© Copyright 2023. All Rights Reserved.</div>
+        </div>
+      </div>
+</body>
+</html>

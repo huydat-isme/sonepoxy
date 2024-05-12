@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công viên Thủ Lệ</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
+    <style>
+        @media(max-width:1520px) {
+            .left-svg {
+                display: none;
+            }
+        }
+  
+        /* small css for the mobile nav close */
+        #nav-mobile-btn.close span:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background: #a0aec0;
+        }
+  
+        #nav-mobile-btn.close span:nth-child(2) {
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+  <header class="relative z-50 w-full h-10 sticky top-0 " > 
+    <!-- nav-bar -->
+    <div class="navbar  bg-base-100  "  data-theme ="retro" >
+       <div class="navbar-start" >
+         <div class="dropdown">
+           <label tabIndex="0" class="btn btn-ghost lg:hidden">
+             <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="h-5 w-5"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+             >
+               <path
+                 strokeLinecap="round"
+                 strokeLinejoin="round"
+                 strokeWidth="2"
+                 d="M4 6h16M4 12h8m-8 6h16"
+               />
+             </svg>
+           </label>
+           <ul
+             tabIndex={2}
+             class="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52"
+           >
+             <li>
+               <p class="">Giới thiệu</p>
+               
+             </li>
+             <li>
+               <p>Dịch vụ</p>
+               <ul class="p-2 ">
+                   <li>
+                       <a>Sơn sàn Epoxy</a>
+                     </li>
+                     <li>
+                       <a>Cung cấp bê tông thương phẩm</a>
+                     </li>
+                     <li>
+                         <a>Mài, xử lý sàn bê tông</a>
+                       </li>
+                       <li>
+                         <a>Xử lý chống thấm</a>
+                       </li>
+               </ul>
+             </li>
+             <li>
+               <a class="blue" href="./products.html">Dự án</a>
+             </li>
+            
+             <li>
+               <a  class="blue" href="./contact_us.html">Liên hệ</a>
+     
+             </li>
+           </ul>
+         </div>
+       
+           <a href='./index.html'   ><div class=" w-20" ><img src="./image/logo.png"   ></div></a>
+       
+        
+       </div>
+       <div class="navbar-center hidden relative z-[99] lg:flex">
+         <ul class="relative menu menu-horizontal px-1">
+           <div class="dropdown ">
+               <Link href='./info'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                   Giới thiệu
+                 </div></Link>
+               </div>
+           <div class="dropdown dropdown-hover"> 
+             <div tabIndex="0" role="button" class="btn m-1 bg-inherit border-none round-none ">
+               Dịch vụ <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+             </div>
+             <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+               <li>
+                 <a>Sơn sàn Epoxy</a>
+               </li>
+               <li>
+                 <a>Cung cấp bê tông thương phẩm</a>
+               </li>
+               <li>
+                   <a>Mài, xử lý sàn bê tông</a>
+                 </li>
+                 <li>
+                   <a>Xử lý chống thấm</a>
+                 </li>
+             </ul>
+           </div>
+           <div class="dropdown ">
+               <a href='./products.html'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                   Dự án
+                 </div></a>
+               </div>
+          
+          
+ 
+           
+           <div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+             <a href='./contact_us.html'>
+               Liên hệ
+             </a>
+             
+           </div>
+         </ul>
+       </div>
+       <div class="navbar-end">
+         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+         <b class="text-center text-black-700 text-xl  ">   0982.989.028</b>
+         </div>
+     </div>
+       <!-- end nav-bar -->
+ </header>
+     <!-- end header -->
+
+
+        <!-- Start Hero -->
+     <div class="relative p-4 mt-16">
+        <div class="max-w-3xl mx-auto">
+            <div
+                class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                <div class="">
+    
+                    
+                    <h1 href="#" class="text-gray-900 font-bold text-4xl">Sơn Epoxy là gì ?</h1>
+                    <br>
+                    <hr>
+                    <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24">
+                        <img src="./image/son_epoxy.jpg" alt="Sơn Epoxy" class="absolute inset-0 h-full w-full object-cover">
+                       
+                    </article>
+                    <p class="text-base leading-8 my-5">
+                        Sơn sàn epoxy là loại sơn có cấu tạo gồm 2 thành phần là A và B. 
+                        Trong đó, A là hợp chất epoxy được trộn lẫn với các phân tử màu siêu mịn, các chất gia cường, dung môi và một số chất phụ gia khác. 
+                        Còn B là chất đóng rắn. Hai thành phần A và B thường được nhà sản xuất trộn theo tỉ lệ 4:1, nhằm tạo ra các liên kết bền vững giữa các phân tử epoxy.
+                    </p>
+    
+                    <h3 class="text-2xl font-bold my-5">Sơn Epoxy có những loại nào</h3>
+    
+                    <p class="text-base leading-8 my-5">
+                        Để đáp ứng nhu cầu đa dạng của khách hàng, hiện nay sơn epoxy có rất nhiều loại. 
+                        Tuy nhiên, về cơ bản, dòng sản phẩm này được phân chia thành 2 loại chính như sau:
+                    </p>
+                    <ul class="list-disc">
+                        <li><p class="text-base leading-8 my-5"> Sơn hệ lăn: Đây là sản phẩm sử dụng dung môi, có 2 thành phần chính gồm sơn và phần đóng rắn. Sơn thường được thi công bằng phương pháp lăn roller, có độ dày sàn khoảng 0.3 – 0.4mm.</p>
+                            <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">Sơn hệ lăn gồm có 2 loại thi công sơn nền gồm epoxy gốc dầu và epoxy gốc nước. Mỗi loại sơn có những đặc tính khác biệt nên được ứng dụng vào nhiều lĩnh vực thi công khác nhau. Sơn gốc nước được sử dụng nhiều trong bệnh viện, các nhà máy sản xuất thực phẩm, dược phẩm. Trong khi đó, sơn gốc dầu được ứng dụng nhiều trong các xí nghiệp may mặc, cơ khí…</blockquote>
+                        </li>
+                        <li>
+                            <p class="text-base leading-8 my-5">
+                                Sơn hệ tự phẳng: Sơn hệ tự phẳng là loại sơn hiện đại có khả năng tự chảy, cân bằng khi đổ sản phẩm lên bề mặt sàn.
+                                Hoạt động theo nguyên lý tự cân bằng nên thợ sơn không cần phải tốn quá nhiều công sức khi thi công. Chỉ cần phủ sơn với độ dày từ 2 – 3mm trở lên, mặt sàn sẽ trở nên sáng bóng và bắt mắt hơn. Lưu ý không sử dụng các hóa chất để làm dung môi khi pha sơn hệ tự phẳng. Nếu sử dụng dung môi khi pha sơn, đặc tính của sơn sẽ bị thay đổi khiến bề mặt sàn trở nên sần sùi.  
+                                <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">  Dòng sản phẩm này cũng có cấu tạo gồm 2 thành phần là phần sơn và phần đóng rắn. Khi thi công, thợ sơn chỉ cần trộn thành phần với nhau theo đúng tỉ lệ mà nhà sản xuất hướng dẫn mà không cần dùng bất cứ hóa chất nào để làm dung môi. </blockquote>
+                            </p>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-bold my-5">Những lưu ý khi sử dụng Sơn Epoxy</h3>
+                    <ul class="list-disc">
+                        <li><p class="text-base leading-8 my-5">Pha sơn đúng như tỉ lệ đã hướng dẫn của nhà sản xuất để đem lại hiệu quả tốt nhất khi sử dụng. Nếu pha sơn và chất đóng rắn không đúng tỉ lệ, các liên kết giữa phân tử epoxy sẽ không bền chắc vì vậy dễ gây ra hiện tượng rạn nứt lớp sơn bên ngoài </p>
+                        
+                        </li>
+                        <li>
+                            <p  class="text-base leading-8 my-5"> Trên thị trường hiện nay có rất nhiều loại sơn. Để chọn được loại sơn nào phù hợp cho sàn nhất, bạn nên nhờ sự tư vấn của các đơn vị thi công uy tín, chuyên nghiệp</p>
+                        </li>
+                       <li>
+                        <p class="text-base leading-8 my-5">
+                            Không chỉ cần chọn loại sơn phù hợp, phương pháp thi công cũng là một yếu tố quan trọng trong việc mang đến độ bền lâu dài cho sàn nhà. Việc lựa chọn phương pháp thi công như phun xăng, sơn tự phẳng hay sơn hệ lăn cần phụ thuộc vào nhiều yếu tố như độ ẩm, diện tích, chất nền bê tông
+                        </p>
+                       </li>
+
+                    </ul>
+                    <p class="text-base leading-8 my-5">
+                        Trên đây là những giải đáp sơn sàn epoxy là gì cũng những lưu ý khi sử dụng sơn mà bạn có thể tham khảo. Với nhiều đặc tính nổi trội, sơn epoxy là sự lựa chọn hoàn hảo giúp tô điểm không gian ngôi nhà bạn thêm phần sạch bóng và sang trọng hơn.
+
+
+                    </p>
+    
+    
+                    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Hero -->
+    <!-- Start Footer -->
+    <div class="bg-gray-100">
+      <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+          <div class="p-5 sm:w-2/12 border-r">
+              <div class="text-sm uppercase text-yellow-400 font-bold">Trang chủ</div>
+              <ul>
+                  <li class="my-2">
+                      <a class="hover:text-yellow-400" href="#">Giới thiệu</a>
+                  </li>
+                  
+                  <li class="my-2">
+                      <a class="hover:text-yellow-400" href="#">Dịch vụ</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="hover:text-yellow-400" href="./products.html">Dự án</a>
+                </li>
+                  <li class="my-2">
+                      <a class="hover:text-yellow-400" href="./contact_us.html">Liên hệ</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="p-5 sm:w-7/12 border-r text-center">
+              <h3 class="font-bold text-xl text-yellow-400 mb-4">HVM</h3>
+              <p class="text-gray-500 text-sm mb-10">Nhà thầu sơn Epoxy hàng đầu miền Bắc</p>
+          </div>
+          <div class="p-5 sm:w-3/12">
+              <div class="text-sm uppercase text-yellow-400 font-bold">Contact Us</div>
+              <ul>
+                  <li class="my-2">
+                      <a class="hover:text-yellow-400" href="#">Trần Phú, Hoàng Mai, Hà Nội</a>
+                  </li>
+                  <li class="my-2">
+                    <a class="hover:text-yellow-400" href="#"> 0982.989.028</a>
+                </li>
+                 
+                  <li class="my-2">
+                      <a class="hover:text-yellow-400" href="#">hungbinbin@gmail.com</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+          <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+             
+    
+              <a href="https://www.facebook.com/hungbinbin" class="w-6 mx-1">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Facebook icon</title><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg>
+              </a>
+    
+              <a href="https://www.tiktok.com/@epoxyhungtran" class="w-6 mx-1">
+                <svg fill="#000000" width="24px" height="24px" viewBox="0 0 0.72 0.72" id="tiktok" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="primary" d="M0.63 0.21v0.06a0.03 0.03 0 0 1 -0.03 0.03 0.24 0.24 0 0 1 -0.12 -0.032v0.197a0.195 0.195 0 1 1 -0.284 -0.173 0.03 0.03 0 0 1 0.044 0.027v0.076a0.028 0.028 0 0 1 -0.008 0.019 0.075 0.075 0 0 0 0.06 0.127A0.078 0.078 0 0 0 0.36 0.46V0.09a0.03 0.03 0 0 1 0.03 -0.03h0.063a0.03 0.03 0 0 1 0.03 0.025A0.12 0.12 0 0 0 0.6 0.18a0.03 0.03 0 0 1 0.03 0.03" style="fill: rgb(0, 0, 0);"/></svg>
+              </a>
+             
+             
+          </div>
+          <div class="my-5">© Copyright 2023. All Rights Reserved.</div>
+      </div>
+    </div>
+</body>
+</html>

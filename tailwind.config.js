@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html","./style.css","./products.html","./cong_vien_thu_le.html"],
+  content: ["./index.html","./style.css","./products.html","./cong_vien_thu_le.html","./son_epoxy.html"],
   daisyui: {
     themes: [
       "light",

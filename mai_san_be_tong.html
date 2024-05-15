@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mài sàn bê tông</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
+    <style>
+        @media(max-width:1520px) {
+            .left-svg {
+                display: none;
+            }
+        }
+  
+        /* small css for the mobile nav close */
+        #nav-mobile-btn.close span:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background: #a0aec0;
+        }
+  
+        #nav-mobile-btn.close span:nth-child(2) {
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+    <header class="relative z-50 w-full h-6 sticky top-0 " > 
+        <!-- nav-bar -->
+        <div class="navbar  bg-base-100  "  data-theme ="retro" >
+           <div class="navbar-start" >
+             <div class="dropdown">
+               <label tabIndex="0" class="btn btn-ghost lg:hidden">
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   class="h-5 w-5"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                 >
+                   <path
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     strokeWidth="2"
+                     d="M4 6h16M4 12h8m-8 6h16"
+                   />
+                 </svg>
+               </label>
+               <ul
+                 tabIndex={2}
+                 class="menu menu-sm dropdown-content mt-3 z-[99] p-2 shadow bg-base-100 rounded-box w-52"
+               >
+                 <li>
+                   <a class="blue" href="./about_us.html">Giới thiệu</a>
+                   
+                 </li>
+                 <li>
+                   <p>Dịch vụ</p>
+                   <ul class="p-2 ">
+                       <li>
+                           <a>Sơn sàn Epoxy</a>
+                         </li>
+                         <li>
+                           <a>Cung cấp bê tông thương phẩm</a>
+                         </li>
+                         <li>
+                             <a>Mài, xử lý sàn bê tông</a>
+                           </li>
+                           <li>
+                             <a>Xử lý chống thấm</a>
+                           </li>
+                   </ul>
+                 </li>
+                 <li>
+                   <a class="blue" href="./products.html" >Dự án</a>
+                 </li>
+                 <li>
+                   <a class="blue" >Bảng giá</a>
+                   <ul class="p-2 ">
+                     <li>
+                         <a>Sơn sàn Epoxy</a>
+                       </li>
+                       <li>
+                         <a>Cung cấp bê tông thương phẩm</a>
+                       </li>
+                       
+                         <li>
+                           <a>Xử lý chống thấm</a>
+                         </li>
+                 </ul>
+                 </li>
+                 <li>
+                   <a  class="blue" href="./contact_us.html">Liên hệ</a>
+         
+                 </li>
+               </ul>
+             </div>
+           
+               <a href='./index.html'   ><div class=" w-20" ><img src="./image/logo.png"   ></div></a>
+           
+            
+           </div>
+           <div class="navbar-center hidden relative z-[99] lg:flex">
+             <ul class="relative menu menu-horizontal px-1">
+               <div class="dropdown ">
+                   <Link href='./about_us.html'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                       Giới thiệu
+                     </div></Link>
+                   </div>
+               <div class="dropdown dropdown-hover"> 
+                 <div tabIndex="0" role="button" class="btn m-1 bg-inherit border-none round-none ">
+                   Dịch vụ <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                 </div>
+                 <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                   <li>
+                     <a>Sơn sàn Epoxy</a>
+                   </li>
+                   <li>
+                     <a>Cung cấp bê tông thương phẩm</a>
+                   </li>
+                   <li>
+                       <a>Mài, xử lý sàn bê tông</a>
+                     </li>
+                     <li>
+                       <a>Xử lý chống thấm</a>
+                     </li>
+                 </ul>
+               </div>
+               <div class="dropdown ">
+                   <a href='./products.html'><div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                       Dự án
+                     </div></a>
+                   </div>
+              
+                   <div class="dropdown dropdown-hover"> 
+                     <div tabIndex="0" role="button" class="btn m-1 bg-inherit border-none round-none ">
+                       Bảng giá <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                     </div>
+                     <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                       <li>
+                         <a>Báo giá sơn sàn Epoxy</a>
+                       </li>
+                       <li>
+                         <a>Bảng giá bê tông thương phẩm</a>
+                       </li>
+                       
+                         <li>
+                           <a>Báo giá chống thấm</a>
+                         </li>
+                     </ul>
+                   </div>
+     
+               
+               <div tabIndex="0" role="button" class="btn m-1  bg-inherit border-none round-none" >
+                 <a href='./contact_us.html'>
+                   Liên hệ
+                 </a>
+                 
+               </div>
+             </ul>
+           </div>
+           <div class="navbar-end">
+             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+             <b class="text-center text-black-700 text-xl  ">  <a href="tel:0982.989.028">0982.989.028</a></b>
+             </div>
+         </div>
+           <!-- end nav-bar -->
+     </header>
+     <!-- end header -->
+
+
+        <!-- Start Hero -->
+        <div class="relative p-4 mt-16">
+            <div class="max-w-3xl mx-auto">
+                <div
+                    class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+                    <div class="">
+        
+                        
+                        <h1 href="#" class="text-gray-900 font-bold text-4xl">Mài sàn bê tông</h1>
+                        <br>
+                        <hr>
+                        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24">
+                            <img src="./image/son_epoxy.jpg" alt="Sơn Epoxy" class="absolute inset-0 h-full w-full object-cover">
+                           
+                        </article>
+                        <p class="text-base leading-8 my-5">
+                            Mài bóng sàn bê tông nhằm cải tiến và xử lý bề mặt bê tông, để tạo ra một bề mặt bóng đẹp nhẵn mịn, với độ bền cao cùng giá trị thẩm mỹ hoàn hảo cho không gian. Vậy để hiểu hơn về mài bóng sàn bê tông, bạn hãy cùng chúng tôi đi tìm hiểu trong bài viết dưới đây nhé!
+                        </p>
+        
+                        <h3 class="text-2xl font-bold my-5">Ưu điểm của mài sàn bê tông</h3>
+        
+                        <ul class="list-disc">
+                            <li><p class="text-base leading-8 my-5">Mài bóng sàn bê tông giúp bề mặt bê tông có độ bền bỉ cao và khó bị phá hỏng. Bạn có thể di chuyển liên tục trên bề mặt sàn mà không lo hiện tượng nứt vỡ hay trầy xước. Vì vậy loại sàn này thường được ứng dụng trong các khu vực như kho chứa hàng, nhà máy sản xuất, nhà xưởng có mật độ xe di chuyển thường xuyên.</p>
+                            
+                            </li>
+                            <li>
+                                <p  class="text-base leading-8 my-5"> Bê tông mài bóng có tuổi thọ cao hơn hẳn so với các loại sàn khác, thời gian sử dụng có thể lên đến hàng chục năm, giúp bạn tiết kiệm tối đa chi phí.</p>
+                            </li>
+                           <li>
+                            <p class="text-base leading-8 my-5">
+                                Ngoài ra sàn không mùi, không chứa các chất hóa học độc hại nên rất an toàn khi sử dụng và thân thiện với môi trường.
+                            </p>
+                           </li>
+    
+                        </ul>
+                       
+                        
+                        <h3 class="text-2xl font-bold my-5">Tại sao nên sử dụng dịch vụ của chúng tôi</h3>
+                        <ul class="list-disc">
+                            <li><p class="text-base leading-8 my-5">Chúng tôi là đơn vị thi công đi đầu trong lĩnh vực mài bóng sàn bê tông chất lượng cao. Với phương châm chất lượng hàng đầu để tạo nên sự thành công và phát triển vượt bặc của công ty. Vì vậy các dịch vụ của chúng tôi luôn hướng đến sự chuyên nghiệp và chất lượng hoàn hảo. </p>
+                            
+                            </li>
+                            <li>
+                                <p  class="text-base leading-8 my-5">Chúng tôi luôn chú trọng đầu tư các trang thiết bị, máy móc hiện đại, tiên tiến, nhằm đảm bảo chất lượng cho mỗi công trình và thời gian thi công nhanh chóng.</p>
+                            </li>
+                           <li>
+                            <p class="text-base leading-8 my-5">
+                                Với đội ngũ nhân viên được đào tạo bài bản, chuyên nghiệp, có kỹ thuật cao, có tinh thần trách nhiệm cao với công việc, cùng quy trình làm việc chi tiết khoa học, đảm bảo bạn sẽ hài lòng tuyệt đối khi sử dụng dịch vụ của chúng tôi.
+                            </p>
+                           </li>
+                           <li>
+                            <p class="text-base leading-8 my-5">
+                                Giá thành hợp lý, cạnh tranh thị trường.
+                           Chế độ bảo hành dài hạn, cùng chế độ chăm sóc khách hàng tận tình chu đáo.
+                            </p>
+                           </li>
+                          
+                        </ul>
+                        
+        
+        
+                        
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+    <!-- Start Footer -->
+    <div class="bg-gray-100">
+        <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+            <div class="p-5 sm:w-2/12 border-r">
+                <div class="text-sm uppercase text-yellow-400 font-bold"><a href="./index.html">Trang chủ</a></div>
+                <ul>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="./about_us.html">Giới thiệu</a>
+                    </li>
+                    
+                    
+                    <li class="my-2">
+                      <a class="hover:text-yellow-400" href="./products.html">Dự án</a>
+                  </li>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="./contact_us.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 sm:w-7/12 border-r text-center">
+                <h3 class="font-bold text-xl text-yellow-400 mb-4">HVM</h3>
+                <p class="text-gray-500 text-sm mb-10">Nhà thầu sơn Epoxy hàng đầu miền Bắc</p>
+            </div>
+            <div class="p-5 sm:w-3/12">
+                <div class="text-sm uppercase text-yellow-400 font-bold">Contact Us</div>
+                <ul>
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">Trần Phú, Hoàng Mai, Hà Nội</a>
+                    </li>
+                    <li class="my-2">
+                      <a class="hover:text-yellow-400" href="#"> 0982.989.028</a>
+                  </li>
+                   
+                    <li class="my-2">
+                        <a class="hover:text-yellow-400" href="#">hungbinbin@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+            <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+               
+      
+                <a href="https://www.facebook.com/hungbinbin" class="w-6 mx-1">
+                  <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Facebook icon</title><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg>
+                </a>
+      
+                <a href="https://www.tiktok.com/@epoxyhungtran" class="w-6 mx-1">
+                  <svg fill="#000000" width="24px" height="24px" viewBox="0 0 0.72 0.72" id="tiktok" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="primary" d="M0.63 0.21v0.06a0.03 0.03 0 0 1 -0.03 0.03 0.24 0.24 0 0 1 -0.12 -0.032v0.197a0.195 0.195 0 1 1 -0.284 -0.173 0.03 0.03 0 0 1 0.044 0.027v0.076a0.028 0.028 0 0 1 -0.008 0.019 0.075 0.075 0 0 0 0.06 0.127A0.078 0.078 0 0 0 0.36 0.46V0.09a0.03 0.03 0 0 1 0.03 -0.03h0.063a0.03 0.03 0 0 1 0.03 0.025A0.12 0.12 0 0 0 0.6 0.18a0.03 0.03 0 0 1 0.03 0.03" style="fill: rgb(0, 0, 0);"/></svg>
+                </a>
+               
+               
+            </div>
+            <div class="my-5">© Copyright 2023. All Rights Reserved.</div>
+        </div>
+      </div>
+</body>
+</html>

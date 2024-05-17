@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html","./style.css","./products.html","./cong_vien_thu_le.html","./son_epoxy.html","./son_chong_tham.html","./mai_san_be_tong.html","./bao_gia_be_tong.html"],
+  content: ["./index.html","./style.css","./products.html","./cong_vien_thu_le.html","./son_epoxy.html","./son_chong_tham.html","./mai_san_be_tong.html","./bao_gia_be_tong.html","./bao_gia_son_Epoxy.html","./bao_gia_chong_tham.html","./bao_gia_mai_san.html","./about_us.html"],
   daisyui: {
     themes: [
       "light",
